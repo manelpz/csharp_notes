@@ -17,9 +17,8 @@ namespace csharp_notes
         {
             return 1;
         }
-
-        
     }
+
 
     class Program
     {
@@ -27,7 +26,6 @@ namespace csharp_notes
         var dbMigrator = new DbMigrator(new Logger());
 
         DbMigrator.Migrate();
-
 
         var logger = new Logger();
         var installer = new Installer(logger);
