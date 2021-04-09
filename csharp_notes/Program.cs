@@ -22,7 +22,6 @@ namespace csharp_notes
 
     class Program
     {
-        //Logger es una clase
         var dbMigrator = new DbMigrator(new Logger());
 
         DbMigrator.Migrate();
