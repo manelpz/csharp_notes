@@ -11,13 +11,10 @@ namespace csharp_notes
             MessageList = new GenericList<string>();
         }
 
-
         public void AddMessage(string message)
         {
             MessageList.Add(message);
         }
-
-
 
         public void SetSuccesResponse(Persona pers) {
             Persona = pers;
