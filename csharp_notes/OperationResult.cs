@@ -19,5 +19,8 @@ namespace csharp_notes
         public void SetSuccesResponse(Persona pers) {
             Persona = pers;
         }
+
+
+
     }
 }
