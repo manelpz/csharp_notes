@@ -16,6 +16,7 @@ namespace csharp_notes
             MessageList.Add(message);
         }
 
+
         public void SetSuccesResponse(Persona pers) {
             Persona = pers;
         }
