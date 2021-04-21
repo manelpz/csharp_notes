@@ -85,7 +85,9 @@ public async Task DownloadHtmlAsync (string url) {
     var webClient = new WebClient();
     var html = await webClient.DowloadStringTaskAsync(url);
 
-    using (var )
+    using (var streamWriter = new StreamWriter(@"c:\projects\result.html")) {
+        streamWriter.Write(html);
+    }
 }
 
 
