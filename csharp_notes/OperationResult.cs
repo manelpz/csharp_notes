@@ -24,21 +24,21 @@ namespace csharp_notes
         }
 
 
-        var book = new Book { isbn = "111", title="c#"};
+        var book = new Book { isbn = "111", title = "c#" };
 
-            var numbers = new List();
+        var numbers = new List();
 
-            numbers.Add(10);
+        numbers.Add(10);
 
 
             var books = new BookList();
-            books.Add(book);
+        books.Add(book);
 
             var numbers = new GenericList<int>();
-            numbers.Add(10);
+        numbers.Add(10);
 
             var books = new GenericList<Book>();
-            books.Add(NewsStyleUriParser Books());
+        books.Add(NewsStyleUriParser Books());
 
 
             Func<int, int> square = number => number * number;
@@ -56,5 +56,11 @@ namespace csharp_notes
     var cheapBooks = books.FindAll(IsCheaperThan10Dollars);
 
 
-    foreach(var )
+    foreach(var book in cheapBooks){
+
+    }
+
+    static bool IsCheaperThan10Dollars(Book book) {
+    return book.price < 10;
+    }
 }
