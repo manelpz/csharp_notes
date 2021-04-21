@@ -74,3 +74,7 @@ var cheapBooks = books
 
 
 using static System.Console;
+
+
+
+using (var streamWriter = new StreamWriter(@"c:\projects\result.html")) ;
