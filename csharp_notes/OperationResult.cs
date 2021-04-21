@@ -41,5 +41,8 @@ namespace csharp_notes
             books.Add(NewsStyleUriParser Books());
 
 
+            Func<int, int> square = number => number * number;
+
+
     }
 }
