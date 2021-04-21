@@ -43,6 +43,18 @@ namespace csharp_notes
 
             Func<int, int> square = number => number * number;
 
+        const int factor = 5;
+        Func<int, int> multipler = n => n * factor;
+
+
+
 
     }
+
+
+    var books = new BookRepository().GetBooks();
+    var cheapBooks = books.FindAll(IsCheaperThan10Dollars);
+
+
+    foreach(var )
 }
