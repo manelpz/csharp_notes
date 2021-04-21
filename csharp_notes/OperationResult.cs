@@ -54,6 +54,7 @@ namespace csharp_notes
 
     var books = new BookRepository().GetBooks();
     var cheapBooks = books.FindAll(IsCheaperThan10Dollars);
+    var cheapBooks = books.FindAll(book => book.Price <20 );
 
 
     foreach(var book in cheapBooks){
@@ -64,3 +65,6 @@ namespace csharp_notes
     return book.price < 10;
     }
 }
+
+
+var cheapBooks = books.Where(b => b.Price <10).OrderBy(b => b.Title).Select(b => b.Title);
