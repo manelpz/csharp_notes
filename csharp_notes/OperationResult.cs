@@ -71,3 +71,6 @@ var cheapBooks = books
     .Where(b => b.Price <10)
     .OrderBy(b => b.Title)
     .Select(b => b.Title);
+
+
+using static System.Console;
